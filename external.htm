@@ -1,0 +1,68 @@
+<html>
+<body>
+
+<div id="datacontainer" style="position:absolute;left:1px;top:10px;width:100%" onMouseover="scrollspeed=0" onMouseout="scrollspeed=cache">
+
+<!-- ADD YOUR SCROLLER CONTENT INSIDE HERE -->
+
+<b>Fruit News</b></p>
+<p align="left"><strong><font size="4" face="Montserrat"><small>What is California's most popular fruit?</a>&nbsp;</small></font></strong><br>
+<font face="Verdana" size="2" color="orange">Oranges</font></p>
+<p align="left"><strong><font face="Verdana"><small>What is New York's most popular fruit?</a>&nbsp;</small></font></strong><br>
+<font face="Verdana" size="2" color="pink"><small>Peaches!!!
+</small></font></p>
+<p align="left"><small><strong><font face="Verdana">Did you know that tomatoes are a fruit?</a>&nbsp;</font></strong></small><br>
+
+<p align="left"><font face="Verdana"><strong>What is Planet Earth's most popular fruit?</small></a><br>
+</strong><small><font face="Verdana" size="4" color="yellow">Bananas!</small></font>
+
+<!-- END SCROLLER CONTENT -->
+
+</div>
+
+<script type="text/javascript">
+
+/***********************************************
+* IFRAME Scroller script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Please keep this notice intact
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Specify speed of scroll. Larger=faster (ie: 5)
+var scrollspeed=cache=2
+
+//Specify intial delay before scroller starts scrolling (in miliseconds):
+var initialdelay=500
+
+function initializeScroller(){
+dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
+dataobj.style.top="5px"
+setTimeout("getdataheight()", initialdelay)
+}
+
+function getdataheight(){
+thelength=dataobj.offsetHeight
+if (thelength==0)
+setTimeout("getdataheight()",10)
+else
+scrollDiv()
+}
+
+function scrollDiv(){
+dataobj.style.top=parseInt(dataobj.style.top)-scrollspeed+"px"
+if (parseInt(dataobj.style.top)<thelength*(-1))
+dataobj.style.top="5px"
+setTimeout("scrollDiv()",40)
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initializeScroller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initializeScroller)
+else
+window.onload=initializeScroller
+
+</script>
+
+</body>
+</html>
