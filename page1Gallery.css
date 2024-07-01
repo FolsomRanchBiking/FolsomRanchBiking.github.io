@@ -59,3 +59,35 @@ body2 {
   transition: all 0.3s;
   color: aquamarine;
 }
+
+.textBox1:hover{
+    transition: all 0.75s;
+    color: #F8F0E3;
+}
+
+.textBox1{
+    transition: all 1s;
+    color: black;
+}
+
+.textBox1Bottom:hover{
+    transition: all 0.75s;
+    color: darkorange;
+}
+
+.textBox1Bottom{
+    transition: all 1s;
+    color: black;
+}
+
+.textBox2 {
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+body.loaded .textBox2 {
+    opacity: 1;
+    transition: padding-top 1s, opacity 2s, color 2.2s;
+    padding-top: 70px;
+    color: #F8F0E3;
+}
