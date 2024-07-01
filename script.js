@@ -21,5 +21,5 @@ function slidesPlugin(activeSlide = 0) {
 slidesPlugin()
 
 window.onload = function() {
-    document.body.className += " loaded";
+    document.body.className += "loaded";
 }

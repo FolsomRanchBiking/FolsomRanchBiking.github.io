@@ -19,6 +19,7 @@ body2 {
     display: flex; /* flex container expands items to fill available free space or/and shrinks them to prevent overflow. */
     padding: 0 20px;h
 }
+
 .slide {
     height: 80vh;
     border: #fff solid 1px;
