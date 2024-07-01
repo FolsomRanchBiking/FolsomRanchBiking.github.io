@@ -33,6 +33,10 @@
   font-weight: bold;
 }
 
+.underText{
+  width: 50%; 
+}
+
 .updates:hover{
   padding-bottom: 12px;
   padding-left: 32px;
