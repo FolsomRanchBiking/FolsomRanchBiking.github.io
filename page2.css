@@ -28,8 +28,10 @@
   padding-right: 20px
 }
 
-.spanPadding{
-  padding-left: 20px;
+.spanPaddingDate{
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
 }
 
 .spanPaddingEurope{
@@ -49,10 +51,7 @@
 }
 
 .underText {
-  width: 100px; 
-  height: 100px;
-  padding-left: 20px;
-  padding-top: 20px;
+  width: 50%; 
 }
 
 
