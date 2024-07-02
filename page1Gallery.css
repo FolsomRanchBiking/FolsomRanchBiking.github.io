@@ -19,7 +19,6 @@ body2 {
     display: flex; /* flex container expands items to fill available free space or/and shrinks them to prevent overflow. */
     padding: 0 20px;h
 }
-
 .slide {
     height: 80vh;
     border: #fff solid 1px;
@@ -88,7 +87,7 @@ body2 {
 
 body.loaded .textBox2 {
     opacity: 1;
-    transition: padding-top 1s, opacity 2s, color 2.2s;
+    transition: padding-top 1.2s, opacity 2s, color 2.2s;
     padding-top: 70px;
     color: #F8F0E3;
 }
