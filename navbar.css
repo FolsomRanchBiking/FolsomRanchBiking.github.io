@@ -36,7 +36,8 @@ body{
 }
   
 .menu{
-	width: 50%;
+	width: 23%;
+	padding-right: 2%;
 }
 
 .menu > ul{
@@ -52,19 +53,23 @@ body{
 
 li{
 	cursor: pointer;
-	color: black;
+	color: #f3f3f3;
 	transition: all 0.3s;
 	border:solid 2px #52796F;
 	padding: 8px;
 	border-radius: 5px;
-  font-size: 18px;
+ 	font-size: 18px;
+  	text-decoration: black underline;
+  	text-decoration-skip-ink: none;
+	text-decoration-thickness: 3px;
 }
 
 li:hover{
 	color: #CAD2C5;
 	border-color: #CAD2C5;
-  font-weight: bold;
-  font-size: 22px;
+ 	font-weight: bold;
+  	font-size: 22px;
+	text-decoration: none
 }
 
 .navbar{
